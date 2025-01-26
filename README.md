@@ -40,3 +40,13 @@ Commands:
 4) **To read a file where file name has spaces**: cat "file name"
 5) **To view hidden files**: Use command ls -a to list all files including hidden files
 6) **To see all the file types in dir**: file ./*
+7) **To find a file by adding filters**: example human readable, 1033 bytes non executable file then: find . -type f -size 1033c ! -executable
+8) **To search for patterns within a file**: Like to search a word next to the word next to the word millionth we do: grep "millionth" data.txt
+9) **To use unique**: uniq options:
+   - -c: Count and show how many times each line appears.
+   - -d: Show only duplicate lines.
+   - -u: Show only unique lines.
+10) **The strings command**: Searches for and prints sequences of printable characters in a binary file or a file that may contain non-text content.
+11) **To decode base4**: base64 -d data.txt
+12) **To rotate by 13 spaces**: cat data.txt | tr 'A-Za-Z' 'N-ZA-Mn-za-m'
+
